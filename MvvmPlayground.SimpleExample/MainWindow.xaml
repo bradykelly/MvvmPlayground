@@ -3,12 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MvvmPlayground.SimpleExample"
+        xmlns:local="clr-namespace:MvvmPlayground.SimpleExample.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" 
+        d:DataContext="local:MainViewModel"
         FontSize="20"
         d:DesignHeight="550" 
         d:DesignWidth="800">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" MinHeight="50" />

@@ -32,12 +32,6 @@ public class MainViewModel: INotifyPropertyChanged
 
     public MainViewModel()
     {
-        Labels.Add(new LabelViewModel{Text = "Label 1"});
-        Labels.Add(new LabelViewModel{Text = "Label 2"});
-        Labels.Add(new LabelViewModel{Text = "Label 3"});
-        Labels.Add(new LabelViewModel{Text = "Label 4"});
-        Labels.Add(new LabelViewModel{Text = "Label 5"});
-
         AddCommand = new AddLabelCommand(this);
     }
     
